@@ -1,0 +1,305 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0115136C1422E65200279646 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0115136B1422E65200279646 /* Cocoa.framework */; };
+		011513761422E65200279646 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 011513741422E65200279646 /* InfoPlist.strings */; };
+		011513781422E65200279646 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 011513771422E65200279646 /* main.m */; };
+		0115137C1422E65200279646 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 0115137A1422E65200279646 /* Credits.rtf */; };
+		0115137F1422E65200279646 /* MyDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 0115137E1422E65200279646 /* MyDocument.m */; };
+		011513821422E65200279646 /* MyDocument.xib in Resources */ = {isa = PBXBuildFile; fileRef = 011513801422E65200279646 /* MyDocument.xib */; };
+		011513851422E65200279646 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 011513831422E65200279646 /* MainMenu.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		011513671422E65200279646 /* MATE2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MATE2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0115136B1422E65200279646 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		0115136E1422E65200279646 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		0115136F1422E65200279646 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		011513701422E65200279646 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		011513731422E65200279646 /* MATE2-Info.plist */ = {isa = PBXFileReference; path = "MATE2-Info.plist"; sourceTree = "<group>"; };
+		011513751422E65200279646 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		011513771422E65200279646 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		011513791422E65200279646 /* MATE2-Prefix.pch */ = {isa = PBXFileReference; path = "MATE2-Prefix.pch"; sourceTree = "<group>"; };
+		0115137B1422E65200279646 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		0115137D1422E65200279646 /* MyDocument.h */ = {isa = PBXFileReference; path = MyDocument.h; sourceTree = "<group>"; };
+		0115137E1422E65200279646 /* MyDocument.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyDocument.m; sourceTree = "<group>"; };
+		011513811422E65200279646 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MyDocument.xib; sourceTree = "<group>"; };
+		011513841422E65200279646 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		011513641422E65200279646 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0115136C1422E65200279646 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0115135C1422E65200279646 = {
+			isa = PBXGroup;
+			children = (
+				011513711422E65200279646 /* MATE2 */,
+				0115136A1422E65200279646 /* Frameworks */,
+				011513681422E65200279646 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		011513681422E65200279646 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				011513671422E65200279646 /* MATE2.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0115136A1422E65200279646 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0115136B1422E65200279646 /* Cocoa.framework */,
+				0115136D1422E65200279646 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0115136D1422E65200279646 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0115136E1422E65200279646 /* AppKit.framework */,
+				0115136F1422E65200279646 /* CoreData.framework */,
+				011513701422E65200279646 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		011513711422E65200279646 /* MATE2 */ = {
+			isa = PBXGroup;
+			children = (
+				0115137D1422E65200279646 /* MyDocument.h */,
+				0115137E1422E65200279646 /* MyDocument.m */,
+				011513801422E65200279646 /* MyDocument.xib */,
+				011513831422E65200279646 /* MainMenu.xib */,
+				011513721422E65200279646 /* Supporting Files */,
+			);
+			path = MATE2;
+			sourceTree = "<group>";
+		};
+		011513721422E65200279646 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				011513731422E65200279646 /* MATE2-Info.plist */,
+				011513741422E65200279646 /* InfoPlist.strings */,
+				011513771422E65200279646 /* main.m */,
+				011513791422E65200279646 /* MATE2-Prefix.pch */,
+				0115137A1422E65200279646 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		011513661422E65200279646 /* MATE2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 011513881422E65200279646 /* Build configuration list for PBXNativeTarget "MATE2" */;
+			buildPhases = (
+				011513631422E65200279646 /* Sources */,
+				011513641422E65200279646 /* Frameworks */,
+				011513651422E65200279646 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MATE2;
+			productName = MATE2;
+			productReference = 011513671422E65200279646 /* MATE2.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0115135E1422E65200279646 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "Cooperative Communities";
+			};
+			buildConfigurationList = 011513611422E65200279646 /* Build configuration list for PBXProject "MATE2" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0115135C1422E65200279646;
+			productRefGroup = 011513681422E65200279646 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				011513661422E65200279646 /* MATE2 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		011513651422E65200279646 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				011513761422E65200279646 /* InfoPlist.strings in Resources */,
+				0115137C1422E65200279646 /* Credits.rtf in Resources */,
+				011513821422E65200279646 /* MyDocument.xib in Resources */,
+				011513851422E65200279646 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		011513631422E65200279646 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				011513781422E65200279646 /* main.m in Sources */,
+				0115137F1422E65200279646 /* MyDocument.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		011513741422E65200279646 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				011513751422E65200279646 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		0115137A1422E65200279646 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0115137B1422E65200279646 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		011513801422E65200279646 /* MyDocument.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				011513811422E65200279646 /* en */,
+			);
+			name = MyDocument.xib;
+			sourceTree = "<group>";
+		};
+		011513831422E65200279646 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				011513841422E65200279646 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		011513861422E65200279646 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		011513871422E65200279646 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		011513891422E65200279646 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MATE2/MATE2-Prefix.pch";
+				INFOPLIST_FILE = "MATE2/MATE2-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		0115138A1422E65200279646 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MATE2/MATE2-Prefix.pch";
+				INFOPLIST_FILE = "MATE2/MATE2-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		011513611422E65200279646 /* Build configuration list for PBXProject "MATE2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				011513861422E65200279646 /* Debug */,
+				011513871422E65200279646 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		011513881422E65200279646 /* Build configuration list for PBXNativeTarget "MATE2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				011513891422E65200279646 /* Debug */,
+				0115138A1422E65200279646 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0115135E1422E65200279646 /* Project object */;
+}
