@@ -14,6 +14,14 @@
 		0115137F1422E65200279646 /* MyDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 0115137E1422E65200279646 /* MyDocument.m */; };
 		011513821422E65200279646 /* MyDocument.xib in Resources */ = {isa = PBXBuildFile; fileRef = 011513801422E65200279646 /* MyDocument.xib */; };
 		011513851422E65200279646 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 011513831422E65200279646 /* MainMenu.xib */; };
+		011513931422F66100279646 /* QTKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 011513921422F66000279646 /* QTKit.framework */; };
+		011513951422F67700279646 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 011513941422F67700279646 /* QuartzCore.framework */; };
+		011513971423059A00279646 /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 011513961423059A00279646 /* Quartz.framework */; };
+		011513DE142361BF00279646 /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 011513DD142361BF00279646 /* libiconv.dylib */; };
+		011513E614244CAD00279646 /* libzbar.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 011513E514244CAD00279646 /* libzbar.a */; };
+		011513F11424647800279646 /* libpng.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 011513F01424647800279646 /* libpng.dylib */; };
+		01A3780614249086002E2F3C /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01A3780514249086002E2F3C /* CoreFoundation.framework */; };
+		01A3780914249093002E2F3C /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01A3780814249093002E2F3C /* IOKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,15 +30,38 @@
 		0115136E1422E65200279646 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		0115136F1422E65200279646 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		011513701422E65200279646 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		011513731422E65200279646 /* MATE2-Info.plist */ = {isa = PBXFileReference; path = "MATE2-Info.plist"; sourceTree = "<group>"; };
+		011513731422E65200279646 /* MATE2-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MATE2-Info.plist"; sourceTree = "<group>"; };
 		011513751422E65200279646 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		011513771422E65200279646 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		011513791422E65200279646 /* MATE2-Prefix.pch */ = {isa = PBXFileReference; path = "MATE2-Prefix.pch"; sourceTree = "<group>"; };
+		011513791422E65200279646 /* MATE2-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MATE2-Prefix.pch"; sourceTree = "<group>"; };
 		0115137B1422E65200279646 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		0115137D1422E65200279646 /* MyDocument.h */ = {isa = PBXFileReference; path = MyDocument.h; sourceTree = "<group>"; };
+		0115137D1422E65200279646 /* MyDocument.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyDocument.h; sourceTree = "<group>"; };
 		0115137E1422E65200279646 /* MyDocument.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyDocument.m; sourceTree = "<group>"; };
 		011513811422E65200279646 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MyDocument.xib; sourceTree = "<group>"; };
 		011513841422E65200279646 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		011513921422F66000279646 /* QTKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QTKit.framework; path = System/Library/Frameworks/QTKit.framework; sourceTree = SDKROOT; };
+		011513941422F67700279646 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		011513961423059A00279646 /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = System/Library/Frameworks/Quartz.framework; sourceTree = SDKROOT; };
+		011513C21423465800279646 /* zbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = zbar.h; path = ../zbar.h; sourceTree = "<group>"; };
+		011513CC142350B900279646 /* Decoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Decoder.h; sourceTree = "<group>"; };
+		011513CD142350B900279646 /* Exception.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Exception.h; sourceTree = "<group>"; };
+		011513CE142350B900279646 /* Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Image.h; sourceTree = "<group>"; };
+		011513CF142350B900279646 /* ImageScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageScanner.h; sourceTree = "<group>"; };
+		011513D0142350B900279646 /* Processor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Processor.h; sourceTree = "<group>"; };
+		011513D1142350B900279646 /* QZBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QZBar.h; sourceTree = "<group>"; };
+		011513D2142350B900279646 /* QZBarImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QZBarImage.h; sourceTree = "<group>"; };
+		011513D3142350B900279646 /* Scanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Scanner.h; sourceTree = "<group>"; };
+		011513D4142350B900279646 /* Symbol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Symbol.h; sourceTree = "<group>"; };
+		011513D5142350B900279646 /* Video.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Video.h; sourceTree = "<group>"; };
+		011513D6142350B900279646 /* Window.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Window.h; sourceTree = "<group>"; };
+		011513D7142350B900279646 /* zbargtk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zbargtk.h; sourceTree = "<group>"; };
+		011513DD142361BF00279646 /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = usr/lib/libiconv.dylib; sourceTree = SDKROOT; };
+		011513E514244CAD00279646 /* libzbar.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libzbar.a; sourceTree = "<group>"; };
+		011513EB1424628500279646 /* png.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = png.h; sourceTree = "<group>"; };
+		011513EF1424631300279646 /* pngconf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pngconf.h; sourceTree = "<group>"; };
+		011513F01424647800279646 /* libpng.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libpng.dylib; sourceTree = "<group>"; };
+		01A3780514249086002E2F3C /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		01A3780814249093002E2F3C /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,7 +69,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01A3780914249093002E2F3C /* IOKit.framework in Frameworks */,
+				01A3780614249086002E2F3C /* CoreFoundation.framework in Frameworks */,
+				011513DE142361BF00279646 /* libiconv.dylib in Frameworks */,
+				011513971423059A00279646 /* Quartz.framework in Frameworks */,
+				011513951422F67700279646 /* QuartzCore.framework in Frameworks */,
+				011513931422F66100279646 /* QTKit.framework in Frameworks */,
 				0115136C1422E65200279646 /* Cocoa.framework in Frameworks */,
+				011513E614244CAD00279646 /* libzbar.a in Frameworks */,
+				011513F11424647800279646 /* libpng.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -48,6 +87,16 @@
 		0115135C1422E65200279646 = {
 			isa = PBXGroup;
 			children = (
+				01A3780814249093002E2F3C /* IOKit.framework */,
+				01A3780514249086002E2F3C /* CoreFoundation.framework */,
+				011513F01424647800279646 /* libpng.dylib */,
+				011513EF1424631300279646 /* pngconf.h */,
+				011513EB1424628500279646 /* png.h */,
+				011513E514244CAD00279646 /* libzbar.a */,
+				011513DD142361BF00279646 /* libiconv.dylib */,
+				011513961423059A00279646 /* Quartz.framework */,
+				011513941422F67700279646 /* QuartzCore.framework */,
+				011513921422F66000279646 /* QTKit.framework */,
 				011513711422E65200279646 /* MATE2 */,
 				0115136A1422E65200279646 /* Frameworks */,
 				011513681422E65200279646 /* Products */,
@@ -84,6 +133,8 @@
 		011513711422E65200279646 /* MATE2 */ = {
 			isa = PBXGroup;
 			children = (
+				011513CB142350B900279646 /* zbar */,
+				011513C21423465800279646 /* zbar.h */,
 				0115137D1422E65200279646 /* MyDocument.h */,
 				0115137E1422E65200279646 /* MyDocument.m */,
 				011513801422E65200279646 /* MyDocument.xib */,
@@ -103,6 +154,25 @@
 				0115137A1422E65200279646 /* Credits.rtf */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		011513CB142350B900279646 /* zbar */ = {
+			isa = PBXGroup;
+			children = (
+				011513CC142350B900279646 /* Decoder.h */,
+				011513CD142350B900279646 /* Exception.h */,
+				011513CE142350B900279646 /* Image.h */,
+				011513CF142350B900279646 /* ImageScanner.h */,
+				011513D0142350B900279646 /* Processor.h */,
+				011513D1142350B900279646 /* QZBar.h */,
+				011513D2142350B900279646 /* QZBarImage.h */,
+				011513D3142350B900279646 /* Scanner.h */,
+				011513D4142350B900279646 /* Symbol.h */,
+				011513D5142350B900279646 /* Video.h */,
+				011513D6142350B900279646 /* Window.h */,
+				011513D7142350B900279646 /* zbargtk.h */,
+			);
+			path = zbar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,7 +333,12 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MATE2/MATE2-Prefix.pch";
 				INFOPLIST_FILE = "MATE2/MATE2-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(inherited) \"$(SRCROOT)\"";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -274,7 +349,12 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MATE2/MATE2-Prefix.pch";
 				INFOPLIST_FILE = "MATE2/MATE2-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(inherited) \"$(SRCROOT)\"";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -298,6 +378,7 @@
 				0115138A1422E65200279646 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
