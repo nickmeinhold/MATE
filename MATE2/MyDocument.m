@@ -70,11 +70,12 @@
         io_service_t platformExpert = IOServiceGetMatchingService(kIOMasterPortDefault, IOServiceMatching("IOPlatformExpertDevice"));
         if (platformExpert) {
             CFTypeRef serialNumberAsCFString = 
-            IORegistryEntryCreateCFProperty(platformExpert,
-                                            CFSTR(kIOPlatformSerialNumberKey),
-                                            kCFAllocatorDefault, 0);
+            IORegistryEntryCreateCFProperty(platformExpert, CFSTR(kIOPlatformSerialNumberKey), kCFAllocatorDefault, 0);
             if (serialNumberAsCFString) {
-                 [serialNumLbl setStringValue:(NSString*)serialNumberAsCFString];
+                
+                serialNumStr = (NSString*)serialNumberAsCFString;
+                [serialNumLbl setStringValue:serialNumStr];
+                
             }
             
             IOObjectRelease(platformExpert);
@@ -211,12 +212,54 @@
         
         /* extract results */
         const zbar_symbol_t *symbol = zbar_image_first_symbol(zbar_image);
+        
+        // extract the first symbol 
+        zbar_symbol_type_t typ = zbar_symbol_get_type(symbol);
+        const char *symbol_data = zbar_symbol_get_data(symbol);
+        printf("decoded %s symbol \"%s\"\n", zbar_get_symbol_name(typ), symbol_data);
+        NSString *decodedSymbolStr = [NSString stringWithUTF8String:symbol_data];
+        [qrCodeLbl setStringValue:decodedSymbolStr];
+        
+//        // send the userid and the computer id to the app engine web server 
+//        // http://www.eigo.co.uk/iPhone-Submitting-HTTP-Requests.aspx 
+//        NSString *urlStr = [@"http://meetattheedge.appspot.com/mate/checkinservice?uid=" stringByAppendingString:decodedSymbolStr];
+//        NSURL *oRequestUrl = [NSURL URLWithString:urlStr];
+//        NSMutableURLRequest *oRequest = [[[NSMutableURLRequest alloc] init] autorelease];
+//        [oRequest setValue:@"text/plain" forHTTPHeaderField:@"Content-Type"];
+//        [oRequest setHTTPMethod:@"GET"];
+//        [oRequest setURL:oRequestUrl];
+//        NSMutableData *oHttpBody = [NSMutableData data];
+//        [oHttpBody appendData:[@"This is Http Request body" dataUsingEncoding:NSUTF8StringEncoding]];
+//        [oRequest setValue:[oHttpBody length] forHTTPHeaderField:@"Content-Length"];
+//        NSError *oError = [[NSError alloc] init];
+//        NSHTTPURLResponse *oResponseCode = nil;
+//        NSData *oResponseData = [NSURLConnection sendSynchronousRequest:oRequest returningResponse:oResponseCode error:oError];
+//        if ([oResponseCode statusCode] >= 200)
+//        {
+//            NSLog(@"Status code is greater than 200");
+//        }
+//        NSString * strResult = [[NSString alloc] initWithData:oResponseData encoding:NSUTF8StringEncoding];
+        
+        NSString *urlStr = [@"http://meetattheedge.appspot.com/mate/checkinservice?uid=" stringByAppendingString:decodedSymbolStr];
+        urlStr = [urlStr stringByAppendingString:@"&cid="];
+        urlStr = [urlStr stringByAppendingString:serialNumStr];
+        NSLog ( @"The URL is: %@", urlStr); 
+        NSURL *oRequestUrl = [NSURL URLWithString:urlStr];
+        NSMutableURLRequest* request = [[[NSMutableURLRequest alloc] initWithURL:oRequestUrl] autorelease];
+        [request setValue:@"text/plain" forHTTPHeaderField:@"User-Agent"];
+        NSURLResponse* response = nil;
+        NSError* error = nil;
+        NSData* respData = [NSURLConnection sendSynchronousRequest:request returningResponse:&response error:&error];
+        NSString *hypeHTML = [[NSString alloc] initWithData:respData encoding:NSASCIIStringEncoding];
+        NSLog ( @"The response is: %@", hypeHTML); 
+        [qrCodeLbl setStringValue:hypeHTML];
+        
+        // read any further symbols and print the data 
         for(; symbol; symbol = zbar_symbol_next(symbol)) {
             /* do something useful with results */
             zbar_symbol_type_t typ = zbar_symbol_get_type(symbol);
             const char *data = zbar_symbol_get_data(symbol);
             printf("decoded %s symbol \"%s\"\n", zbar_get_symbol_name(typ), data);
-            [qrCodeLbl setStringValue:[NSString stringWithUTF8String:data]];
         }
         
         // send userid and computer serial number to GAE 

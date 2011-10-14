@@ -27,6 +27,7 @@
     
     IBOutlet NSTextField                *qrCodeLbl;
     IBOutlet NSTextField                *serialNumLbl;
+    NSString                            *serialNumStr;
     
 }
 
